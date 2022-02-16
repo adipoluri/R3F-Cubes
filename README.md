@@ -1,6 +1,7 @@
 # Voxel Cube Interactive
 
-https://youtu.be/PWRwSh9HqpE
+[![](https://img.youtube.com/vi/PWRwSh9HqpE/0.jpg)](https://youtu.be/PWRwSh9HqpE "Visualizer")
+
 
 
 ## Build your project
