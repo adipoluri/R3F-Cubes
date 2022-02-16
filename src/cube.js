@@ -10,7 +10,8 @@ const cubeAmount = 1000;
 const cubeAmountCubed = 10;
 const tempObject = new THREE.Object3D()
 const tempColor = new THREE.Color()
-const data = Array.from({ length: cubeAmount }, () => ({ color: niceColors[20][Math.floor(Math.random() * 5)], scale: 1 }))
+const randCube = Math.floor(Math.random() * 99)
+const data = Array.from({ length: cubeAmount }, () => ({ color: niceColors[randCube][Math.floor(Math.random() * 5)], scale: 1 }))
 let cubeCheck = Array.from({ length: cubeAmount })
 
 function Boxes() {
@@ -26,6 +27,7 @@ function Boxes() {
       for (let y = 0; y < cubeAmountCubed; y++)
         for (let z = 0; z < cubeAmountCubed; z++) {
           const id = i++
+          
           if(cubeCheck[id] === 1){
             tempObject.position.set(1000,1000,1000)
           } else {
